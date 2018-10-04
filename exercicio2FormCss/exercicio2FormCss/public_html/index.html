@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .form-control{
+                
+                width: 42%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                
+            }
+            .form-control2{
+                display: block;
+                width: 94%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                
+            }
+            .form-control_sel{
+                
+                width: 30%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 12px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                
+            }
+            .btn > .caret,
+            .dropup > .btn > .caret {
+              border-top-color: #000 !important;
+            }
+            .btn {
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                    touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                   -moz-user-select: none;
+                    -ms-user-select: none;
+                        user-select: none;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+              }
+              .btn:focus,
+              .btn:active:focus,
+              .btn.active:focus,
+              .btn.focus,
+              .btn:active.focus,
+              .btn.active.focus {
+                outline: 5px auto -webkit-focus-ring-color;
+                outline-offset: -2px;
+              }
+              .btn:hover,
+              .btn:focus,
+              .btn.focus {
+                color: #333;
+                text-decoration: none;
+              }
+              .btn:active,
+              .btn.active {
+                background-image: none;
+                outline: 0;
+                -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+                        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+              }
+              .btn.disabled,
+              .btn[disabled],
+              fieldset[disabled] .btn {
+                cursor: not-allowed;
+                filter: alpha(opacity=65);
+                -webkit-box-shadow: none;
+                        box-shadow: none;
+                opacity: .65;
+              }
+            .btn-success {
+                color: #fff;
+                background-color: #5cb85c;
+                border-color: #4cae4c;
+              }
+              .btn-success:focus,
+            .btn-success.focus {
+              color: #fff;
+              background-color: #449d44;
+              border-color: #255625;
+            }
+            .btn-success:hover {
+              color: #fff;
+              background-color: #449d44;
+              border-color: #398439;
+            }
+            .btn-success:active,
+            .btn-success.active,
+            .open > .dropdown-toggle.btn-success {
+              color: #fff;
+              background-color: #449d44;
+              border-color: #398439;
+            }
+            .btn-success:active:hover,
+            .btn-success.active:hover,
+            .open > .dropdown-toggle.btn-success:hover,
+            .btn-success:active:focus,
+            .btn-success.active:focus,
+            .open > .dropdown-toggle.btn-success:focus,
+            .btn-success:active.focus,
+            .btn-success.active.focus,
+            .open > .dropdown-toggle.btn-success.focus {
+              color: #fff;
+              background-color: #398439;
+              border-color: #255625;
+            }
+            .btn-success:active,
+            .btn-success.active,
+            .open > .dropdown-toggle.btn-success {
+              background-image: none;
+            }
+            .btn-success.disabled:hover,
+            .btn-success[disabled]:hover,
+            fieldset[disabled] .btn-success:hover,
+            .btn-success.disabled:focus,
+            .btn-success[disabled]:focus,
+            fieldset[disabled] .btn-success:focus,
+            .btn-success.disabled.focus,
+            .btn-success[disabled].focus,
+            fieldset[disabled] .btn-success.focus {
+              background-color: #5cb85c;
+              border-color: #4cae4c;
+            }
+            .btn-success .badge {
+              color: #5cb85c;
+              background-color: #fff;
+            }
+        </style>
+        <script type="text/javascript" src="jquery.js"></script>
+        
+    </head>
+    <body>
+        <div style="background-image: repeating-linear-gradient(white,#ccccff); width: 500px;left:40%;position:relative;">
+            <div style="margin-left: 3%">
+                <h1>Abra uma conta</h1>
+                <h3>É gratuito e sempre será</h3>
+                <table>
+                    <tr><td colspan="2"><input type="text" id="nome" class="form-control" placeholder="Nome"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="sobrenome" class="form-control" placeholder="Sobrenome"/></td></tr>
+                    <tr><td colspan="2"><input type="text" id="email" class="form-control2" placeholder="E-mail ou número de celular"/></td></tr>
+                    <tr><td colspan="2"><input type="text" id="email" class="form-control2" placeholder="Insira novamente o E-mail ou celular"/></td></tr>
+                    <tr><td colspan="2"><input type="text" id="senha" class="form-control2" placeholder="Nova senha"/></td></tr>
+                    <tr><td colspan="2"><h3>Aniversário</h3></td></tr>
+                    <tr><td width="60%"><select class="form-control_sel" id="sel_dia"></select>&nbsp;<select class="form-control_sel" id="sel_mes"></select>&nbsp;<select class="form-control_sel" id="sel_ano"></select>
+                        </td><td width="40%"><a href="index.html"><label title="Ao informar sua data de nascimento, você ajuda a garantir que a sua experiência no Site seja adequada à sua idade. Se desejar alterar quem vê isso, vá para a seção Sobre do seu perfil. Para obter mais detalhes, visite nossa Política de Dados.">Por que preciso informar minha data de nascimento?</label></a></td></tr>
+                    <tr><td><h4><label><input type="radio" name="genero" value="M" id="genero_0" />Masculino</label><label><input type="radio" name="genero" value="F" id="genero_1" />Feminino</label></h4></td><td></td></tr>
+                    <tr><td colspan="2"><label>Ao clicar em Abrir conta, você concorda com nossos <a href="index.html">Termos</a> e que você leu nossa <a href="index.html">Política de Dados</a>, incluindo nosso <a href="index.html">Uso de Cookies</a></label></td></tr>
+                    <tr><td colspan="2"><br><input type="button" value="Abrir uma conta" class="btn btn-success"/></td></tr>
+                </table>
+                <br> 
+           </div>
+        </div>
+        <script type="text/javascript">
+            function l_dia(){
+               var tn = '<option value="">DIA</option>';
+               for(var x = 1;x < 32;x++){
+                   var y = x+"";          
+                   if(y.length < 2){
+                       y = "0"+y;
+                       tn += '<option value="'+y+'">'+y+'</option>';
+                   }
+                   else{
+                       tn += '<option value="'+y+'">'+y+'</option>';
+                   }
+               }
+               $('#sel_dia').html(tn);
+            }
+            function l_mes(){
+              var tn = '<option value="">MÊS</option>';
+               var meses = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'];
+               for(var x = 0;x < 12;x++){                 
+                       tn += '<option value="'+meses[x]+'">'+meses[x]+'</option>';
+                }
+               $('#sel_mes').html(tn);
+            }
+            function l_ano(){
+              var tn = '<option value="">ANO</option>';
+              var d = new Date();
+              var ano_ = d.getFullYear();            
+               for(var x = 1900;x < ano_;x++){
+                   var y = x+"";          
+                   if(y.length < 2){
+                       y = "0"+y;
+                       tn += '<option value="'+y+'">'+y+'</option>';
+                   }
+                   else{
+                       tn += '<option value="'+y+'">'+y+'</option>';
+                   }
+               }
+               $('#sel_ano').html(tn);
+            }
+            
+            $(document).ready(function(){
+                    l_dia();
+                    l_mes();
+                    l_ano();
+                });
+        </script>
+    </body>
+</html>
